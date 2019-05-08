@@ -1,0 +1,779 @@
+/* FONTS */
+/*
+
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Yellowtail', cursive;
+font-family: 'Poppins', sans-serif;
+
+*/
+
+@viewport {
+    width: device-width;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fff;
+    color: #424242;
+    font-family: 'Noto Sans', sans-serif;
+}
+.brand, #brand {
+    font-family: 'Yellowtail', cursive;
+    font-size: 1.875em;
+    line-height: 3.125em;
+    float: left;
+    color: #999;
+}
+.dropbtn {
+    display: none;
+}
+.dropdown {
+    display: none;
+}
+.dropdown-content {
+    display: none;
+}
+.dropdown-content a {
+    display: none;
+}
+.dropdown-content a:hover {
+    display: none;
+}
+.dropdown:hover .dropdown-content {
+    display: none;
+}
+.dropdown:hover .dropbtn {
+    display: none;
+}
+nav {
+    width: 100%;
+    text-align: center;
+}
+nav ul {
+    float: right;
+    line-height: 3.125em;
+}
+nav li {
+    display: inline;
+    list-style-type: none;
+}
+nav a {
+    text-decoration: none;
+    padding: .625em;
+    color: #999;
+    font-family: 'Poppins', sans-serif;
+}
+nav a:hover {
+    color: #af2e2e;
+}
+li a.active {
+    background-color: #af2e2e;
+    color: #ccc;
+}
+#modelAP {
+    width: 50%;
+    float: left;
+    margin-right: .9375em;
+    box-shadow: .1875em .1875em .3125em #424242; 
+}
+#korean, #flattop, #smoker {
+    width: 70%;
+    float: left;
+    margin-right: .9375em;
+    box-shadow: .1875em .1875em .3125em #424242;
+}
+#content, #products {
+    clear: both;
+    float: left;
+    width: 63%;
+    border: .125em solid #ccc;
+    border-bottom: none;
+}
+section {
+    float: right;
+    width: 33%;
+    overflow: hidden;
+    border: .125em solid #ccc;
+}
+.required {
+    color: #f00;
+}
+#contest {
+    clear: both;
+    float: none;
+    margin: .625em auto;
+    width: 50%;
+    padding-top: .3125em;
+    padding-left: .625em;
+}
+#content, section, #moreContent, #products {
+    margin-top: .625em;
+    padding-top: .3125em;
+    padding-left: .625em;
+}
+#contest {
+    width: 94%;
+    border: .0625em solid #ccc;
+}
+.banger {
+    margin-top: 1%;
+    clear: both;
+}
+#fn1Msg {
+    width: 43.75em;
+}
+#contestInfo {
+    max-width: 56.25em;
+}
+#weber {
+    margin-top: 1.5625em;
+}
+#campingAZ {
+    margin-top: .625em;
+    margin-right: .9375em;
+    float: left;
+}
+.lead {
+    margin-bottom: 1%;
+}
+#topForm {
+    clear: both;
+    padding-left: 1%;
+    width: 40%;
+    float: left;
+    border: .0625em solid #424242;
+}
+form p {
+    margin: .3125em 0;
+}
+.shortmargin {
+    width: 2.1875em;
+}
+.longmargin {
+    width: 2.8125em;
+}
+fieldset {
+    width: 50%;
+    float: right;
+}
+fieldset p, fieldset p, legend {
+    margin-left: 2%;
+}
+#age {
+    padding-left: 1%;
+    float: left;
+    width: 40%;
+    border: .0625em solid #424242;
+}
+.contestFormSubmit {
+    clear: both;
+    text-align: center;
+    margin-top: 10%;
+    padding: 3.125em 0;
+}
+#contestFormSubmit {
+    padding: .625em;
+}
+.limit {
+    display: block;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+#trends {
+    text-align: center;
+    padding: .625em 0;
+}
+#article {
+    float: left;
+    width: 96%;
+    padding: 0 .65%;
+    margin: 1% 1%;
+}
+#moreContent {
+    float: left;
+    width: 63%;
+    border: .125em solid #ccc;
+    margin-top: 0;
+    border-top: none;
+}
+footer {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    font-size: .75em;
+    padding: 0 auto;
+    padding-top: .625em;
+}
+.hide {
+    display: none;
+}
+#submission, #fail {
+    text-align: center;
+    padding-top: 15.625em;
+    padding-bottom: 6.25em;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: .1875em .1875em .0625em #ccc;
+    font-size: 2.5em;
+}
+#fail {
+    padding-top: 0;
+    font-size: 2em;
+    text-shadow: none;
+    width: 80%;
+    margin: 0 auto;
+}
+.wrapper {
+    text-align: center;
+    width: 50%;
+    padding: 1.875em;
+    margin: 0 auto;
+    border: .1875em dotted #ccc;
+    border-bottom: none;
+}
+#rules {
+    padding: .3125em;
+}
+.codeValidField {
+    width: 6.25em;
+}
+#codeSubmit {
+    padding: .1875em;
+    margin: .1875em;
+}
+.accessory-view {
+    float: left;
+    clear: both;
+    padding: 2%;
+}
+.accessory-link {
+    display: none;
+}
+.products {
+    float: right;
+    clear: both;
+    border-bottom: .125em dotted #ccc;
+}
+#accessory {
+    width: 100%;
+}
+#accessory img {
+    width: 90%;
+    padding: 5%;
+}
+figcaption {
+    text-align: center;
+}
+.back {
+    list-style-type: none;
+    text-decoration: none;
+    color: #ccc;
+    background-color: #af2e2e;
+    padding: .3em;
+    margin-top: .3em;
+    display: block;
+    width: 13.75em;
+    border: .0625em solid #ccc;
+    border-radius: .3125em;
+    text-align: center;
+}
+.coupon {
+    width: 23.75em;
+    margin: 2%;
+    padding: 1%;
+    border: .1875em dashed #ccc;
+}
+.coupon a {
+    text-align: center;
+    margin-left: 5.625em;
+    text-decoration: none;
+    color: #af2e2e;
+}
+.coupon a:hover {
+    color: #34a4c4;
+}
+#mission {
+    clear: both;
+    float: left;
+    width: 99%;
+    border: .125em solid #ccc;
+    margin-top: .625em;
+    padding-top: .3125em;
+    padding: 0 .625em;
+}
+#mission h2 {
+    text-align: center;
+}
+#department {
+    float: left;
+    width: 99%;
+    border: .125em solid #ccc;
+    margin-top: 0;
+    border-top: none;
+    padding-top: .3125em;
+    padding: 0 .625em;
+}
+#department h2 {
+    color: #af2e2e;
+}
+.departments {
+    text-align: center;
+    text-decoration: underline;
+}
+.departments-info {
+    text-align: center;
+}
+
+
+
+
+
+/*////////// media query //////////*/
+@media screen and (max-width: 60em) {  /*////////// tablet viewport - (max-width: 960px) //////////*/
+    .brand {
+        font-family: 'Yellowtail', cursive;
+        font-size: 1.875em;
+        line-height: 3.125em;
+        float: left;
+        color: #999;
+        margin-top: -100px;
+        text-align: center;
+    }
+    #brand {
+        line-height: 3.125em;
+        float: left;
+        margin-top: 0;
+    }
+    .dropbtn {
+        display: none;
+    }
+    .dropdown {
+        display: none;
+    }
+    .dropdown-content {
+        display: none;
+    }
+    .dropdown-content a {
+        display: none;
+    }
+    .dropdown-content a:hover {
+        display: none;
+    }
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+    .dropdown:hover .dropbtn {
+        display: none;
+    }
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+    nav ul {
+        float: none;
+        line-height: 3.125em;
+        margin-top: 6.25em;
+        background: #af2e2e;
+    }
+    nav li {
+        display: inline;
+        list-style-type: none;
+    }
+    nav a {
+        text-decoration: none;
+        padding: .625em;
+        font-family: 'Poppins', sans-serif;
+        color: #ccc;
+    }
+    nav a:hover {
+        color: #34a4c4;
+    }
+    li a.active {
+        background-color: #ccc;
+        color: #af2e2e;
+    }
+    #modelAP, #korean, #flattop, #smoker {
+        width: 38%;
+        float: left;
+        margin-right: .9375em;
+        box-shadow: .1875em .1875em .3125em #424242;
+    }
+    #content, #products {
+        width: 96%;
+        border: .0625em solid #000;
+        padding: 0 1% 2% 1%;
+        margin: 0 1%;
+        margin-top: .3125em;
+    }
+    #content h2, #products h2 {
+        text-align: center;
+    }
+    section {
+        width: 96%;
+        border: .0625em solid #000;
+        padding: 0 1%;
+        margin: 0 1%;
+        margin-top: .3125em;
+        overflow: hidden;
+    }
+    .banger {
+        text-align: center;
+        margin-top: 2%
+    }
+    #fn1Msg {
+        width: 100%;
+        text-align: center;
+    }
+    #contestInfo {
+        width: 100%;
+        text-align: center;
+    }
+    #weber {
+        margin-bottom: 20%;
+        margin-right: 2%;
+    }
+    #weber, #campingAZ {
+        float: none;
+        width: 38%;
+        margin-top: 2%;
+        box-shadow: .1875em .1875em .3125em #424242;
+    }
+    .lead {
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    #topForm {
+        padding: 0;
+        border: none;
+        width: 100%;
+        float: none;
+    }
+    form p {
+        margin: .3125em 0;
+    }
+    .shortmargin {
+        width: 2.1875em;
+    }
+    .longmargin {
+        width: 2.8125em;
+    }
+    fieldset {
+        width: 80%;
+        float: none;
+    }
+    fieldset p, fieldset p, legend {
+        margin-left: 2%;
+    }
+    #age {
+        padding: 0;
+        float: none;
+        width: 100%;
+        border: none;
+    }
+    .contestFormSubmit {
+        padding: 0; 
+        text-align: center;
+        margin: 5% 0;
+    }
+    #contestFormSubmit {
+        padding: 2%;
+    }
+    #trends {
+        padding: 0 1%;
+        margin: 0 .5%;
+        margin-top: .625em;
+        text-align: center;
+    }
+    #moreContent {
+        clear: both;
+        width: 96%;
+        margin-top: .9375em;
+        border: .0625em solid #000;
+        padding: 0 1%;
+        margin: 1%;
+        margin-top: .3125em;
+    }
+    #moreContent h2 {
+        text-align: center;
+    }
+    footer {
+        width: 100%;
+        text-align: center;
+        font-size: .75em;
+        padding: 0 auto;
+    }
+    #submission, #fail {
+        padding-top: 3.125em;
+        padding-bottom: 3.125em;
+        font-size: 2em;
+    }
+    #fail {
+        font-size: 1.5em;
+        width: 90%;
+    }
+    .wrapper {
+        text-align: left;
+        width: 80%;
+        margin-left: 0;
+        border: .1875em dotted #ccc;
+        border-bottom: none;
+    }
+    #rules {
+        padding: 1% 0;
+    }
+    .accessory-view {
+        float: left;
+        clear: both;
+        padding: 2%;
+    }
+    .accessory-link {
+        display: none;
+    }
+    .products {
+        float: right;
+        clear: both;
+        border-bottom: .125em dotted #ccc;
+    }
+    .products:last-child {
+        border-bottom: none;
+    }
+    #mission {
+        width: 96%;
+        border: .0625em solid #000;
+        padding: 0 1% 2% 1%;
+        margin: 0 1%;
+        margin-top: .3125em;
+    }
+    #department {
+        clear: both;
+        width: 96%;
+        margin-top: .9375em;
+        border: .0625em solid #000;
+        padding: 0 1%;
+        margin: 1%;
+        margin-top: .3125em;
+    }
+}
+
+
+
+
+@media screen and (max-width: 30em) {  /*////////// mobile viewport (max-width: 480px)//////////*/
+    .brand {
+        width: 73%;
+        text-align: center;
+        margin-top: .0625em;
+        font-size: 1.4375em;
+    }
+    #brand {
+        margin-top: 0;
+        text-align: center;
+    }
+    nav {
+        display: none;
+    }
+    .dropbtn {
+        background-color: #af2e2e;
+        color: #ccc;
+        padding: 1em;
+        font-size: 1em;
+        border: none;
+        cursor: pointer;
+        display: block;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        float: right;
+        clear: right;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #af2e2e;
+        min-width: 10em;
+        box-shadow: 0 .5em 1em 0 rgba(0,0,0,0.2);
+    }
+    .dropdown-content a {
+        color: #ccc;
+        padding: .75em 1em;
+        text-decoration: none;
+        display: block;
+        width: 4.375em;
+        border-top: .0625em solid #ccc;
+    }
+    .dropdown-content a:hover {
+        background-color: #ccc;
+        display: block;
+        color: #af2e2e;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown:hover .dropbtn {
+        background-color: #af2e2e;
+        display: block;
+    }
+    #modelAP, #korean, #flattop, #smoker {
+        display: none;
+    }
+    #content, #products {
+        width: 96%;
+        border: .0625em solid #000;
+        padding: 0 1%;
+        margin: 0 1%;
+        margin-top: .3125em;
+    }
+    #content h2, #products h2 {
+        text-align: center;
+    }
+    section {
+        width: 96%;
+        border: .0625em solid #000;
+        padding: 0 1%;
+        margin: 0 1%;
+        margin-top: .3125em;
+    }
+    #contest {
+        width: 94%;
+        border: none;
+    }
+    .banger {
+        text-align: center;
+    }
+    #fn1Msg {
+        width: 100%;
+        text-align: center;
+    }
+    #contestInfo {
+        width: 100%;
+        text-align: center;
+    }
+    #weber, #campingAZ {
+        display: none;
+    }
+    .lead {
+        text-align: center;
+    }
+    #topForm {
+        padding: 0;
+        border: none;
+        width: 100%;
+        float: none;
+    }
+    form p {
+        margin: .3125em 0;
+        text-align: left;
+    }
+    .shortmargin {
+        width: 2.1875em;
+    }
+    .longmargin {
+        width: 2.8125em;
+    }
+    fieldset {
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+    }
+    fieldset p, fieldset p, legend {
+        margin-left: 2%;
+    }
+    #age {
+        padding: 0;
+        float: none;
+        width: 100%;
+        border: none;
+    }
+    .contestFormSubmit {
+        padding: 0;
+        text-align: center;
+        margin: 10% 0;
+    }
+    #contestFormSubmit {
+        padding: 2%;
+    }
+    #trends {
+        padding: 0 1%;
+        margin: 0 .5%;
+        margin-top: .625em;
+        text-align: center;
+    }
+    #moreContent {
+        width: 96%;
+        margin-top: .9375em;
+        border: .0625em solid #000;
+        padding: 0 1%;
+        margin: 1%;
+        margin-top: .3125em;
+    }
+    #moreContent h2 {
+        text-align: center;
+    }
+    footer {
+        width: 100%;
+        text-align: center;
+        font-size: .75em;
+        padding: 0 auto;
+    }
+    #submission, #fail {
+        padding-top: 1.875em;
+        padding-bottom: .625em;
+        font-size: 1.5em;
+        clear: both;
+    }
+    #fail {
+        font-size: 1em;
+        width: 95%;
+        padding-bottom: 1.875em;
+    }
+    .wrapper {
+        text-align: left;
+        width: 70%;
+        margin-left: 0;
+        border: .1875em dotted #ccc;
+    }
+    .accessory-view {
+        display: none;
+    }
+    .accessory-link {
+        list-style-type: none;
+        text-decoration: none;
+        color: #ccc;
+        background-color: #af2e2e;
+        padding: .5em;
+        margin: .3em auto;
+        display: block;
+        width: 70%;
+        border: .0625em solid #ccc;
+        border-radius: .625em;
+        text-align: center;
+    }
+    .products {
+        border-bottom: .125em dotted #ccc;
+    }
+    .products:last-child {
+        border-bottom: none;
+    }
+    .coupon {
+        width: 22.3125em;
+    }
+    #mission {
+        width: 96%;
+        border: .0625em solid #000;
+        padding: 0 1%;
+        margin: 0 1%;
+        margin-top: .3125em;
+    }
+    #department {
+        width: 96%;
+        margin-top: .9375em;
+        border: .0625em solid #000;
+        padding: 0 1%;
+        margin: 1%;
+        margin-top: .3125em;
+    }
+}
+/*////////// end media query //////////*/
